@@ -1,0 +1,2 @@
+steps knn
+KNNGeneric --> KNNresults-->> KNNTrain-->KNNtest

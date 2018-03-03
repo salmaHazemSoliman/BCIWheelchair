@@ -1,0 +1,3 @@
+open analyzerGUI.py
+open analyzer_extended.py
+

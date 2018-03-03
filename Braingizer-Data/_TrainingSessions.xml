@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<List>
+ <TrainingSession Name="Session_2014_01_15_54172">
+  <TimingOptions BlankTime="2" NumberOfTrials="50" SteadyTime="1" TrainingTime="4"/>
+  <TrainingClasses BACK="False" FORWARD="False" LEFT="True" NEUTRAL="False" RIGHT="True"/>
+  <Description/>
+ </TrainingSession>
+ <TrainingSession Name="Session_2014_03_11_61695">
+  <TimingOptions BlankTime="2" NumberOfTrials="50" SteadyTime="1" TrainingTime="4"/>
+  <TrainingClasses BACK="False" FORWARD="False" LEFT="True" NEUTRAL="False" RIGHT="True"/>
+  <Description/>
+ </TrainingSession>
+ <TrainingSession Name="Session_2014_04_17_82423">
+  <TimingOptions BlankTime="2" NumberOfTrials="50" SteadyTime="1" TrainingTime="4"/>
+  <TrainingClasses BACK="False" FORWARD="False" LEFT="True" NEUTRAL="False" RIGHT="True"/>
+  <Description>
+   Hemaly's Home
+  </Description>
+ </TrainingSession>
+ <TrainingSession Name="Session_2014_04_23_80026">
+  <TimingOptions BlankTime="2" NumberOfTrials="50" SteadyTime="1" TrainingTime="4"/>
+  <TrainingClasses BACK="False" FORWARD="False" LEFT="True" NEUTRAL="True" RIGHT="True"/>
+  <Description>
+   Changing the refs
+  </Description>
+ </TrainingSession>
+ <TrainingSession Name="Session_2014_04_23_82000">
+  <TimingOptions BlankTime="2" NumberOfTrials="50" SteadyTime="1" TrainingTime="4"/>
+  <TrainingClasses BACK="False" FORWARD="False" LEFT="True" NEUTRAL="False" RIGHT="True"/>
+  <Description>
+   Changing the refs, with Right &amp; Left only
+  </Description>
+ </TrainingSession>
+ <TrainingSession Name="Session_2014_05_03_82409">
+  <TimingOptions BlankTime="2" NumberOfTrials="50" SteadyTime="1" TrainingTime="4"/>
+  <TrainingClasses BACK="False" FORWARD="False" LEFT="True" NEUTRAL="False" RIGHT="True"/>
+  <Description>
+   Tilting the EEG
+  </Description>
+ </TrainingSession>
+ <TrainingSession Name="Session_2014_05_06_84005">
+  <TimingOptions BlankTime="2" NumberOfTrials="50" SteadyTime="1" TrainingTime="4"/>
+  <TrainingClasses BACK="False" FORWARD="False" LEFT="True" NEUTRAL="False" RIGHT="True"/>
+  <Description>
+   using stress balls and thinking only changing references
+  </Description>
+ </TrainingSession>
+ <TrainingSession Name="Session_2014_05_10_71422">
+  <TimingOptions BlankTime="2" NumberOfTrials="2" SteadyTime="1" TrainingTime="4"/>
+  <TrainingClasses BACK="False" FORWARD="False" LEFT="True" NEUTRAL="False" RIGHT="True"/>
+  <Description>
+   dummy
+  </Description>
+ </TrainingSession>
+ <TrainingSession Name="Session_2014_05_10_71828">
+  <TimingOptions BlankTime="2" NumberOfTrials="20" SteadyTime="1" TrainingTime="4"/>
+  <TrainingClasses BACK="False" FORWARD="False" LEFT="True" NEUTRAL="False" RIGHT="True"/>
+  <Description>
+   roar gaz senan
+  </Description>
+ </TrainingSession>
+ <TrainingSession Name="Session_2014_05_18_62030">
+  <TimingOptions BlankTime="2" NumberOfTrials="20" SteadyTime="1" TrainingTime="4"/>
+  <TrainingClasses BACK="False" FORWARD="False" LEFT="True" NEUTRAL="False" RIGHT="True"/>
+  <Description>
+   Right &amp; Left Blink
+  </Description>
+ </TrainingSession>
+ <TrainingSession Name="Session_2014_05_18_65914">
+  <TimingOptions BlankTime="2" NumberOfTrials="15" SteadyTime="1" TrainingTime="4"/>
+  <TrainingClasses BACK="False" FORWARD="False" LEFT="True" NEUTRAL="False" RIGHT="True"/>
+  <Description>
+   Right &amp; Left gz
+  </Description>
+ </TrainingSession>
+ <TrainingSession Name="Session_2014_05_18_66654">
+  <TimingOptions BlankTime="2" NumberOfTrials="5" SteadyTime="1" TrainingTime="4"/>
+  <TrainingClasses BACK="False" FORWARD="False" LEFT="True" NEUTRAL="False" RIGHT="True"/>
+  <Description>
+   gz Right for Right, gz both for Left
+  </Description>
+ </TrainingSession>
+ <TrainingSession Name="Session_2014_06_23_6128">
+  <TimingOptions BlankTime="2" NumberOfTrials="15" SteadyTime="1" TrainingTime="4"/>
+  <TrainingClasses BACK="False" FORWARD="False" LEFT="True" NEUTRAL="True" RIGHT="True"/>
+  <Description>
+   gz Right, gz Left &amp; Neutral
+  </Description>
+ </TrainingSession>
+ <TrainingSession Name="Session_2014_06_23_55433">
+  <TimingOptions BlankTime="2" NumberOfTrials="50" SteadyTime="1" TrainingTime="4"/>
+  <TrainingClasses BACK="False" FORWARD="False" LEFT="True" NEUTRAL="True" RIGHT="True"/>
+  <Description>
+   StressBalls Right&amp;Left
+  </Description>
+ </TrainingSession>
+ <TrainingSession Name="Session_2014_06_23_61827">
+  <TimingOptions BlankTime="2" NumberOfTrials="15" SteadyTime="1" TrainingTime="4"/>
+  <TrainingClasses BACK="False" FORWARD="True" LEFT="True" NEUTRAL="True" RIGHT="True"/>
+  <Description>
+   Right(Gz), Left(Gz), FWD(Right Blink)
+  </Description>
+ </TrainingSession>
+ <TrainingSession Name="Session_2014_06_27_73509">
+  <TimingOptions BlankTime="2" NumberOfTrials="15" SteadyTime="1" TrainingTime="2"/>
+  <TrainingClasses BACK="False" FORWARD="True" LEFT="True" NEUTRAL="True" RIGHT="True"/>
+  <Description>
+   Refrence down, window length = 2
+  </Description>
+ </TrainingSession>
+ <TrainingSession Name="Session_2014_07_05_51998">
+  <TimingOptions BlankTime="2" NumberOfTrials="25" SteadyTime="1" TrainingTime="4"/>
+  <TrainingClasses BACK="False" FORWARD="False" LEFT="True" NEUTRAL="False" RIGHT="True"/>
+  <Description>
+   Left(Left Hand) &amp; Right(Mathmatical Op)
+  </Description>
+ </TrainingSession>
+ <TrainingSession Name="Session_2014_07_05_58392">
+  <TimingOptions BlankTime="2" NumberOfTrials="25" SteadyTime="1" TrainingTime="4"/>
+  <TrainingClasses BACK="False" FORWARD="False" LEFT="True" NEUTRAL="True" RIGHT="True"/>
+  <Description>
+   Left(Left Hand), Right(Mathmatical Op) &amp; Neutral
+  </Description>
+ </TrainingSession>
+ <TrainingSession Name="Session_2014_09_01_81148">
+  <TimingOptions BlankTime="2" NumberOfTrials="15" SteadyTime="1" TrainingTime="2"/>
+  <TrainingClasses BACK="False" FORWARD="True" LEFT="True" NEUTRAL="True" RIGHT="True"/>
+  <Description>
+   Right(Right brow), Left(Left brow) &amp; Forward(Gz)
+  </Description>
+ </TrainingSession>
+</List>

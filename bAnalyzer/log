@@ -1,0 +1,2982 @@
+root@kali:~# cd Documents/Braingizer/bAnalyzer/
+root@kali:~/Documents/Braingizer/bAnalyzer# ./bAnalyzer.sh 
+
+   Generating MainUI
+   Generating BulkDetectionUI
+   Generating FeatureAnalysisUI
+   Generating FeatureNavigationUI
+
+Starting Braingizer-Analyzer
+
+
+Traceback (most recent call last):
+  File "UI/Analyzer_extended.py", line 146, in testBrowseButtonClicked
+    TrainingFileClass.getClasses(self.detectFilePath)
+  File "Classes/TrainingFileClass.py", line 59, in getClasses
+    logfile = open(filepath, "r").readlines()
+IOError: [Errno 2] No such file or directory: PyQt4.QtCore.QString(u'')
+/root/Documents/Braingizer/bAnalyzer/Braingizer-Data/TrainingData/Session_2014_01_15_54172/[T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+/root/Documents/Braingizer/bAnalyzer/Braingizer-Data/DetectionData/[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+False
+
+Creating file dictionaries:
+------------------
+Dict of files contains the following entry/entries
+Given train file is: /root/Documents/Braingizer/bAnalyzer/Braingizer-Data/TrainingData/Session_2014_01_15_54172/[T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Given detect file is: /root/Documents/Braingizer/bAnalyzer/Braingizer-Data/DetectionData/[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Detection path is a file
+Training path is a file
+/root/Documents/Braingizer/bAnalyzer/Braingizer-Data/TrainingData/Session_2014_01_15_54172/[T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+/root/Documents/Braingizer/bAnalyzer/Braingizer-Data/DetectionData/[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+
+
+samefile is not set, entering BulkDetect!
+Given train file is: /root/Documents/Braingizer/bAnalyzer/Braingizer-Data/TrainingData/Session_2014_01_15_54172/[T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Given detect file is: /root/Documents/Braingizer/bAnalyzer/Braingizer-Data/DetectionData/[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Detection path is a file
+Training path is a file
+Traing File: [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+************
+Detection File: [D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+************
+Creating Detection Paths:
+-------------------------
+Path 0: Raw, lMhB, butter, LDA, KNN
+KNN
+BUTTER
+KNN training done!
+trial 0: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 1: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 2: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 3: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 4: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 5: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 6: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 7: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 8: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 9: PCA Unknown, None Unknown, LDA [u'LEFT']
+[True, False, False, False, True, True, False, True, True, True]
+60.0 40.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 001
+Enhancement flags 001
+Classifier KNN
+60.0
+
+Paramters: 
+True Positive: 2
+False Positive: 1
+True Negative: 4
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)80.0% 
+
+Precision (TP/TP+FP): 66.6666666667% 
+
+Path 1: Raw, lMhB, butter, LDA, likelihood
+Likelihood
+BUTTER
+Likelihood training done!
+trial 0: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 1: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 2: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 3: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 4: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 5: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 6: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 7: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 8: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 9: PCA Unknown, LDA [u'LEFT'], None Unknown
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[True, False, False, False, True, True, False, False, False, True]
+40.0 60.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 001
+Enhancement flags 001
+Classifier Likelihood
+40.0
+
+Paramters: 
+True Positive: 1
+False Positive: 2
+True Negative: 3
+False Negative: 4
+Sensitivity (TP/TP+TF): 20.0% 
+
+Specifity: (TN/TN+FP)60.0% 
+
+Precision (TP/TP+FP): 33.3333333333% 
+
+Path 2: Raw, lMhB, butter, LDA, leastSquares
+Least Squares
+BUTTER
+Least Square training done!
+trial 0: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 1: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 2: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 3: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 4: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 5: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 6: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 7: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 8: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 9: PCA Unknown, LDA [u'LEFT'], None Unknown
+[True, False, False, False, True, True, False, False, False, True]
+40.0 60.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 001
+Enhancement flags 001
+Classifier Least Squares
+40.0
+
+Paramters: 
+True Positive: 1
+False Positive: 2
+True Negative: 3
+False Negative: 4
+Sensitivity (TP/TP+TF): 20.0% 
+
+Specifity: (TN/TN+FP)60.0% 
+
+Precision (TP/TP+FP): 33.3333333333% 
+
+Path 3: Raw, lMhB, butter, PCA, KNN
+KNN
+BUTTER
+nChannels =  56
+KNN training done!
+trial 0: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 1: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 2: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 3: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 4: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 5: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 6: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 7: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 8: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 9: PCA [u'LEFT'], None Unknown, LDA Unknown
+[False, True, True, True, False, True, True, True, True, True]
+80.0 20.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 001
+Enhancement flags 010
+Classifier KNN
+80.0
+
+Paramters: 
+True Positive: 4
+False Positive: 1
+True Negative: 4
+False Negative: 1
+Sensitivity (TP/TP+TF): 80.0% 
+
+Specifity: (TN/TN+FP)80.0% 
+
+Precision (TP/TP+FP): 80.0% 
+
+Path 4: Raw, lMhB, butter, PCA, likelihood
+Likelihood
+BUTTER
+nChannels =  56
+Likelihood training done!
+trial 0: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 1: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 2: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 3: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 4: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 5: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 6: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 7: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 8: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 9: PCA [u'LEFT'], LDA Unknown, None Unknown
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[True, False, False, False, True, True, True, False, False, True]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 001
+Enhancement flags 010
+Classifier Likelihood
+50.0
+
+Paramters: 
+True Positive: 2
+False Positive: 2
+True Negative: 3
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)60.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 5: Raw, lMhB, butter, PCA, leastSquares
+Least Squares
+BUTTER
+nChannels =  56
+Least Square training done!
+trial 0: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 1: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 2: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 3: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 4: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 5: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 6: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 7: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 8: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 9: PCA [u'LEFT'], LDA Unknown, None Unknown
+[True, False, False, False, True, True, True, False, False, True]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 001
+Enhancement flags 010
+Classifier Least Squares
+50.0
+
+Paramters: 
+True Positive: 2
+False Positive: 2
+True Negative: 3
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)60.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 6: Raw, lMhB, butter, None, KNN
+KNN
+BUTTER
+KNN training done!
+trial 0: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 1: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 2: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 3: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 4: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 5: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 6: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 7: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 8: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 9: PCA Unknown, None [u'LEFT'], LDA Unknown
+[True, True, True, False, False, False, True, False, False, True]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 001
+Enhancement flags 100
+Classifier KNN
+50.0
+
+Paramters: 
+True Positive: 3
+False Positive: 3
+True Negative: 2
+False Negative: 2
+Sensitivity (TP/TP+TF): 60.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 7: Raw, lMhB, butter, None, likelihood
+Likelihood
+BUTTER
+Likelihood training done!
+trial 0: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 1: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 2: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 3: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 4: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 5: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 6: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 7: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 8: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 9: PCA Unknown, LDA Unknown, None [u'LEFT']
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[True, False, False, True, True, True, True, True, False, True]
+70.0 30.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 001
+Enhancement flags 100
+Classifier Likelihood
+70.0
+
+Paramters: 
+True Positive: 2
+False Positive: 0
+True Negative: 5
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)100.0% 
+
+Precision (TP/TP+FP): 100.0% 
+
+Path 8: Raw, lMhB, butter, None, leastSquares
+Least Squares
+BUTTER
+Least Square training done!
+trial 0: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 1: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 2: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 3: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 4: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 5: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 6: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 7: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 8: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 9: PCA Unknown, LDA Unknown, None [u'RIGHT']
+[False, True, True, True, True, False, False, False, True, False]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 001
+Enhancement flags 100
+Classifier Least Squares
+50.0
+
+Paramters: 
+True Positive: 4
+False Positive: 4
+True Negative: 1
+False Negative: 1
+Sensitivity (TP/TP+TF): 80.0% 
+
+Specifity: (TN/TN+FP)20.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 9: Raw, mean, butter, LDA, KNN
+KNN
+BUTTER
+KNN training done!
+trial 0: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 1: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 2: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 3: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 4: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 5: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 6: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 7: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 8: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 9: PCA Unknown, None Unknown, LDA [u'LEFT']
+[False, True, True, False, False, False, False, True, True, True]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 001
+Enhancement flags 001
+Classifier KNN
+50.0
+
+Paramters: 
+True Positive: 3
+False Positive: 3
+True Negative: 2
+False Negative: 2
+Sensitivity (TP/TP+TF): 60.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 10: Raw, mean, butter, LDA, likelihood
+Likelihood
+BUTTER
+x = before filter
+Likelihood training done!
+trial 0: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 1: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 2: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 3: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 4: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 5: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 6: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 7: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 8: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 9: PCA Unknown, LDA [u'LEFT'], None Unknown
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[False, True, True, False, False, False, False, True, True, True]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 001
+Enhancement flags 001
+Classifier Likelihood
+50.0
+
+Paramters: 
+True Positive: 3
+False Positive: 3
+True Negative: 2
+False Negative: 2
+Sensitivity (TP/TP+TF): 60.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 11: Raw, mean, butter, LDA, leastSquares
+Least Squares
+BUTTER
+Least Square training done!
+trial 0: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 1: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 2: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 3: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 4: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 5: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 6: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 7: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 8: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 9: PCA Unknown, LDA [u'LEFT'], None Unknown
+[False, True, True, False, False, False, False, True, True, True]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 001
+Enhancement flags 001
+Classifier Least Squares
+50.0
+
+Paramters: 
+True Positive: 3
+False Positive: 3
+True Negative: 2
+False Negative: 2
+Sensitivity (TP/TP+TF): 60.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 12: Raw, mean, butter, PCA, KNN
+KNN
+BUTTER
+nChannels =  28
+KNN training done!
+trial 0: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 1: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 2: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 3: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 4: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 5: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 6: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 7: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 8: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 9: PCA [u'LEFT'], None Unknown, LDA Unknown
+[True, False, True, False, True, True, True, True, True, True]
+80.0 20.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 001
+Enhancement flags 010
+Classifier KNN
+80.0
+
+Paramters: 
+True Positive: 4
+False Positive: 1
+True Negative: 4
+False Negative: 1
+Sensitivity (TP/TP+TF): 80.0% 
+
+Specifity: (TN/TN+FP)80.0% 
+
+Precision (TP/TP+FP): 80.0% 
+
+Path 13: Raw, mean, butter, PCA, likelihood
+Likelihood
+BUTTER
+x = before filter
+nChannels =  28
+Likelihood training done!
+trial 0: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 1: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 2: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 3: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 4: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 5: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 6: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 7: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 8: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 9: PCA [u'LEFT'], LDA Unknown, None Unknown
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[False, True, True, False, False, False, False, True, True, True]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 001
+Enhancement flags 010
+Classifier Likelihood
+50.0
+
+Paramters: 
+True Positive: 3
+False Positive: 3
+True Negative: 2
+False Negative: 2
+Sensitivity (TP/TP+TF): 60.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 14: Raw, mean, butter, PCA, leastSquares
+Least Squares
+BUTTER
+nChannels =  28
+Least Square training done!
+trial 0: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 1: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 2: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 3: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 4: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 5: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 6: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 7: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 8: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 9: PCA [u'LEFT'], LDA Unknown, None Unknown
+[False, True, True, False, False, False, False, True, True, True]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 001
+Enhancement flags 010
+Classifier Least Squares
+50.0
+
+Paramters: 
+True Positive: 3
+False Positive: 3
+True Negative: 2
+False Negative: 2
+Sensitivity (TP/TP+TF): 60.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 15: Raw, mean, butter, None, KNN
+KNN
+BUTTER
+KNN training done!
+trial 0: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 1: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 2: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 3: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 4: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 5: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 6: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 7: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 8: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 9: PCA Unknown, None [u'LEFT'], LDA Unknown
+[True, True, True, False, True, False, True, False, False, True]
+60.0 40.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 001
+Enhancement flags 100
+Classifier KNN
+60.0
+
+Paramters: 
+True Positive: 4
+False Positive: 3
+True Negative: 2
+False Negative: 1
+Sensitivity (TP/TP+TF): 80.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 57.1428571429% 
+
+Path 16: Raw, mean, butter, None, likelihood
+Likelihood
+BUTTER
+x = before filter
+Likelihood training done!
+trial 0: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 1: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 2: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 3: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 4: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 5: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 6: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 7: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 8: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 9: PCA Unknown, LDA Unknown, None [u'LEFT']
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[True, True, True, False, False, False, False, False, True, True]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 001
+Enhancement flags 100
+Classifier Likelihood
+50.0
+
+Paramters: 
+True Positive: 3
+False Positive: 3
+True Negative: 2
+False Negative: 2
+Sensitivity (TP/TP+TF): 60.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 17: Raw, mean, butter, None, leastSquares
+Least Squares
+BUTTER
+Least Square training done!
+trial 0: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 1: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 2: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 3: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 4: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 5: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 6: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 7: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 8: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 9: PCA Unknown, LDA Unknown, None [u'LEFT']
+[False, True, True, False, False, False, False, True, True, True]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 001
+Enhancement flags 100
+Classifier Least Squares
+50.0
+
+Paramters: 
+True Positive: 3
+False Positive: 3
+True Negative: 2
+False Negative: 2
+Sensitivity (TP/TP+TF): 60.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 18: Raw, lMhB, ideal, LDA, KNN
+KNN
+Ideal
+warning: matrix singular to machine precision
+KNN training done!
+trial 0: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 1: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 2: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 3: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 4: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 5: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 6: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 7: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 8: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 9: PCA Unknown, None Unknown, LDA [u'LEFT']
+[False, True, True, True, True, True, True, False, True, True]
+80.0 20.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 010
+Enhancement flags 001
+Classifier KNN
+80.0
+
+Paramters: 
+True Positive: 5
+False Positive: 2
+True Negative: 3
+False Negative: 0
+Sensitivity (TP/TP+TF): 100.0% 
+
+Specifity: (TN/TN+FP)60.0% 
+
+Precision (TP/TP+FP): 71.4285714286% 
+
+Path 19: Raw, lMhB, ideal, LDA, likelihood
+Likelihood
+Ideal
+Likelihood training done!
+trial 0: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 1: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 2: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 3: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 4: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 5: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 6: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 7: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 8: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 9: PCA Unknown, LDA [u'RIGHT'], None Unknown
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[False, True, True, False, False, False, False, True, False, False]
+30.0 70.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 010
+Enhancement flags 001
+Classifier Likelihood
+30.0
+
+Paramters: 
+True Positive: 2
+False Positive: 4
+True Negative: 1
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)20.0% 
+
+Precision (TP/TP+FP): 33.3333333333% 
+
+Path 20: Raw, lMhB, ideal, LDA, leastSquares
+Least Squares
+Ideal
+Least Square training done!
+trial 0: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 1: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 2: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 3: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 4: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 5: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 6: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 7: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 8: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 9: PCA Unknown, LDA [u'RIGHT'], None Unknown
+[False, True, True, False, False, False, False, True, False, False]
+30.0 70.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 010
+Enhancement flags 001
+Classifier Least Squares
+30.0
+
+Paramters: 
+True Positive: 2
+False Positive: 4
+True Negative: 1
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)20.0% 
+
+Precision (TP/TP+FP): 33.3333333333% 
+
+Path 21: Raw, lMhB, ideal, PCA, KNN
+KNN
+Ideal
+nChannels =  28
+KNN training done!
+trial 0: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 1: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 2: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 3: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 4: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 5: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 6: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 7: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 8: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 9: PCA [u'RIGHT'], None Unknown, LDA Unknown
+[True, False, True, True, False, False, True, True, False, False]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 010
+Enhancement flags 010
+Classifier KNN
+50.0
+
+Paramters: 
+True Positive: 2
+False Positive: 2
+True Negative: 3
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)60.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 22: Raw, lMhB, ideal, PCA, likelihood
+Likelihood
+Ideal
+nChannels =  28
+Likelihood training done!
+trial 0: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 1: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 2: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 3: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 4: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 5: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 6: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 7: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 8: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 9: PCA [u'RIGHT'], LDA Unknown, None Unknown
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[False, False, True, True, False, True, True, True, False, False]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 010
+Enhancement flags 010
+Classifier Likelihood
+50.0
+
+Paramters: 
+True Positive: 2
+False Positive: 2
+True Negative: 3
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)60.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 23: Raw, lMhB, ideal, PCA, leastSquares
+Least Squares
+Ideal
+nChannels =  28
+Least Square training done!
+trial 0: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 1: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 2: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 3: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 4: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 5: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 6: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 7: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 8: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 9: PCA [u'RIGHT'], LDA Unknown, None Unknown
+[False, True, True, False, False, False, False, True, True, False]
+40.0 60.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 010
+Enhancement flags 010
+Classifier Least Squares
+40.0
+
+Paramters: 
+True Positive: 3
+False Positive: 4
+True Negative: 1
+False Negative: 2
+Sensitivity (TP/TP+TF): 60.0% 
+
+Specifity: (TN/TN+FP)20.0% 
+
+Precision (TP/TP+FP): 42.8571428571% 
+
+Path 24: Raw, lMhB, ideal, None, KNN
+KNN
+Ideal
+KNN training done!
+trial 0: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 1: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 2: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 3: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 4: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 5: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 6: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 7: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 8: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 9: PCA Unknown, None [u'RIGHT'], LDA Unknown
+[False, True, True, False, True, False, True, False, True, False]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 010
+Enhancement flags 100
+Classifier KNN
+50.0
+
+Paramters: 
+True Positive: 5
+False Positive: 5
+True Negative: 0
+False Negative: 0
+Sensitivity (TP/TP+TF): 100.0% 
+
+Specifity: (TN/TN+FP)0.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 25: Raw, lMhB, ideal, None, likelihood
+Likelihood
+Ideal
+Likelihood training done!
+trial 0: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 1: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 2: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 3: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 4: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 5: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 6: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 7: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 8: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 9: PCA Unknown, LDA Unknown, None [u'RIGHT']
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[False, True, True, False, True, False, True, False, True, False]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 010
+Enhancement flags 100
+Classifier Likelihood
+50.0
+
+Paramters: 
+True Positive: 5
+False Positive: 5
+True Negative: 0
+False Negative: 0
+Sensitivity (TP/TP+TF): 100.0% 
+
+Specifity: (TN/TN+FP)0.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 26: Raw, lMhB, ideal, None, leastSquares
+Least Squares
+Ideal
+Least Square training done!
+trial 0: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 1: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 2: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 3: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 4: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 5: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 6: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 7: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 8: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 9: PCA Unknown, LDA Unknown, None [u'RIGHT']
+[False, True, True, False, True, False, True, False, True, False]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 010
+Enhancement flags 100
+Classifier Least Squares
+50.0
+
+Paramters: 
+True Positive: 5
+False Positive: 5
+True Negative: 0
+False Negative: 0
+Sensitivity (TP/TP+TF): 100.0% 
+
+Specifity: (TN/TN+FP)0.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 27: Raw, mean, ideal, LDA, KNN
+KNN
+Ideal
+KNN training done!
+trial 0: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 1: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 2: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 3: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 4: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 5: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 6: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 7: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 8: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 9: PCA Unknown, None Unknown, LDA [u'LEFT']
+[True, False, False, False, False, True, True, True, True, True]
+60.0 40.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 010
+Enhancement flags 001
+Classifier KNN
+60.0
+
+Paramters: 
+True Positive: 2
+False Positive: 1
+True Negative: 4
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)80.0% 
+
+Precision (TP/TP+FP): 66.6666666667% 
+
+Path 28: Raw, mean, ideal, LDA, likelihood
+Likelihood
+Ideal
+Likelihood training done!
+trial 0: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 1: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 2: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 3: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 4: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 5: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 6: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 7: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 8: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 9: PCA Unknown, LDA [u'LEFT'], None Unknown
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[True, False, False, False, True, True, True, True, True, True]
+70.0 30.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 010
+Enhancement flags 001
+Classifier Likelihood
+70.0
+
+Paramters: 
+True Positive: 3
+False Positive: 1
+True Negative: 4
+False Negative: 2
+Sensitivity (TP/TP+TF): 60.0% 
+
+Specifity: (TN/TN+FP)80.0% 
+
+Precision (TP/TP+FP): 75.0% 
+
+Path 29: Raw, mean, ideal, LDA, leastSquares
+Least Squares
+Ideal
+Least Square training done!
+trial 0: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 1: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 2: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 3: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 4: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 5: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 6: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 7: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 8: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 9: PCA Unknown, LDA [u'RIGHT'], None Unknown
+[False, True, True, False, True, False, True, False, True, False]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 010
+Enhancement flags 001
+Classifier Least Squares
+50.0
+
+Paramters: 
+True Positive: 5
+False Positive: 5
+True Negative: 0
+False Negative: 0
+Sensitivity (TP/TP+TF): 100.0% 
+
+Specifity: (TN/TN+FP)0.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 30: Raw, mean, ideal, PCA, KNN
+KNN
+Ideal
+nChannels =  28
+KNN training done!
+trial 0: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 1: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 2: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 3: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 4: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 5: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 6: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 7: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 8: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 9: PCA [u'LEFT'], None Unknown, LDA Unknown
+[True, False, True, False, False, True, False, False, False, True]
+40.0 60.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 010
+Enhancement flags 010
+Classifier KNN
+40.0
+
+Paramters: 
+True Positive: 1
+False Positive: 2
+True Negative: 3
+False Negative: 4
+Sensitivity (TP/TP+TF): 20.0% 
+
+Specifity: (TN/TN+FP)60.0% 
+
+Precision (TP/TP+FP): 33.3333333333% 
+
+Path 31: Raw, mean, ideal, PCA, likelihood
+Likelihood
+Ideal
+nChannels =  28
+Likelihood training done!
+trial 0: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 1: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 2: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 3: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 4: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 5: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 6: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 7: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 8: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 9: PCA [u'RIGHT'], LDA Unknown, None Unknown
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[True, False, False, False, True, True, True, True, True, False]
+60.0 40.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 010
+Enhancement flags 010
+Classifier Likelihood
+60.0
+
+Paramters: 
+True Positive: 3
+False Positive: 2
+True Negative: 3
+False Negative: 2
+Sensitivity (TP/TP+TF): 60.0% 
+
+Specifity: (TN/TN+FP)60.0% 
+
+Precision (TP/TP+FP): 60.0% 
+
+Path 32: Raw, mean, ideal, PCA, leastSquares
+Least Squares
+Ideal
+nChannels =  28
+Least Square training done!
+trial 0: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 1: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 2: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 3: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 4: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 5: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 6: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 7: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 8: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 9: PCA [u'RIGHT'], LDA Unknown, None Unknown
+[True, False, False, False, True, True, True, True, True, False]
+60.0 40.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 010
+Enhancement flags 010
+Classifier Least Squares
+60.0
+
+Paramters: 
+True Positive: 3
+False Positive: 2
+True Negative: 3
+False Negative: 2
+Sensitivity (TP/TP+TF): 60.0% 
+
+Specifity: (TN/TN+FP)60.0% 
+
+Precision (TP/TP+FP): 60.0% 
+
+Path 33: Raw, mean, ideal, None, KNN
+KNN
+Ideal
+KNN training done!
+trial 0: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 1: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 2: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 3: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 4: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 5: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 6: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 7: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 8: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 9: PCA Unknown, None [u'LEFT'], LDA Unknown
+[False, False, True, False, True, False, True, True, True, True]
+60.0 40.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 010
+Enhancement flags 100
+Classifier KNN
+60.0
+
+Paramters: 
+True Positive: 4
+False Positive: 3
+True Negative: 2
+False Negative: 1
+Sensitivity (TP/TP+TF): 80.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 57.1428571429% 
+
+Path 34: Raw, mean, ideal, None, likelihood
+Likelihood
+Ideal
+Likelihood training done!
+trial 0: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 1: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 2: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 3: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 4: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 5: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 6: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 7: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 8: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 9: PCA Unknown, LDA Unknown, None [u'RIGHT']
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[True, False, False, False, True, False, True, False, True, False]
+40.0 60.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 010
+Enhancement flags 100
+Classifier Likelihood
+40.0
+
+Paramters: 
+True Positive: 3
+False Positive: 4
+True Negative: 1
+False Negative: 2
+Sensitivity (TP/TP+TF): 60.0% 
+
+Specifity: (TN/TN+FP)20.0% 
+
+Precision (TP/TP+FP): 42.8571428571% 
+
+Path 35: Raw, mean, ideal, None, leastSquares
+Least Squares
+Ideal
+Least Square training done!
+trial 0: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 1: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 2: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 3: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 4: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 5: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 6: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 7: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 8: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 9: PCA Unknown, LDA Unknown, None [u'LEFT']
+[True, False, False, False, True, True, True, True, True, True]
+70.0 30.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = False
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 010
+Enhancement flags 100
+Classifier Least Squares
+70.0
+
+Paramters: 
+True Positive: 3
+False Positive: 1
+True Negative: 4
+False Negative: 2
+Sensitivity (TP/TP+TF): 60.0% 
+
+Specifity: (TN/TN+FP)80.0% 
+
+Precision (TP/TP+FP): 75.0% 
+
+Path 36: Remove, lMhB, butter, LDA, KNN
+KNN
+BUTTER
+KNN training done!
+trial 0: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 1: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 2: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 3: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 4: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 5: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 6: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 7: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 8: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 9: PCA Unknown, None Unknown, LDA [u'LEFT']
+[True, False, False, True, True, True, True, True, False, True]
+70.0 30.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 001
+Enhancement flags 001
+Classifier KNN
+70.0
+
+Paramters: 
+True Positive: 2
+False Positive: 0
+True Negative: 5
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)100.0% 
+
+Precision (TP/TP+FP): 100.0% 
+
+Path 37: Remove, lMhB, butter, LDA, likelihood
+Likelihood
+BUTTER
+Likelihood training done!
+trial 0: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 1: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 2: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 3: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 4: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 5: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 6: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 7: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 8: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 9: PCA Unknown, LDA [u'LEFT'], None Unknown
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[True, False, False, True, True, True, True, True, False, True]
+70.0 30.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 001
+Enhancement flags 001
+Classifier Likelihood
+70.0
+
+Paramters: 
+True Positive: 2
+False Positive: 0
+True Negative: 5
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)100.0% 
+
+Precision (TP/TP+FP): 100.0% 
+
+Path 38: Remove, lMhB, butter, LDA, leastSquares
+Least Squares
+BUTTER
+Least Square training done!
+trial 0: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 1: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 2: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 3: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 4: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 5: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 6: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 7: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 8: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 9: PCA Unknown, LDA [u'LEFT'], None Unknown
+[True, False, False, True, True, True, True, True, False, True]
+70.0 30.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 001
+Enhancement flags 001
+Classifier Least Squares
+70.0
+
+Paramters: 
+True Positive: 2
+False Positive: 0
+True Negative: 5
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)100.0% 
+
+Precision (TP/TP+FP): 100.0% 
+
+Path 39: Remove, lMhB, butter, PCA, KNN
+KNN
+BUTTER
+nChannels =  56
+KNN training done!
+trial 0: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 1: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 2: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 3: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 4: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 5: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 6: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 7: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 8: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 9: PCA [u'LEFT'], None Unknown, LDA Unknown
+[True, False, True, True, True, False, False, True, False, True]
+60.0 40.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 001
+Enhancement flags 010
+Classifier KNN
+60.0
+
+Paramters: 
+True Positive: 2
+False Positive: 1
+True Negative: 4
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)80.0% 
+
+Precision (TP/TP+FP): 66.6666666667% 
+
+Path 40: Remove, lMhB, butter, PCA, likelihood
+Likelihood
+BUTTER
+nChannels =  56
+Likelihood training done!
+trial 0: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 1: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 2: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 3: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 4: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 5: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 6: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 7: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 8: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 9: PCA [u'LEFT'], LDA Unknown, None Unknown
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[True, False, False, True, True, True, True, True, False, True]
+70.0 30.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 001
+Enhancement flags 010
+Classifier Likelihood
+70.0
+
+Paramters: 
+True Positive: 2
+False Positive: 0
+True Negative: 5
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)100.0% 
+
+Precision (TP/TP+FP): 100.0% 
+
+Path 41: Remove, lMhB, butter, PCA, leastSquares
+Least Squares
+BUTTER
+nChannels =  56
+Least Square training done!
+trial 0: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 1: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 2: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 3: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 4: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 5: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 6: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 7: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 8: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 9: PCA [u'LEFT'], LDA Unknown, None Unknown
+[True, False, False, True, True, True, True, True, False, True]
+70.0 30.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 001
+Enhancement flags 010
+Classifier Least Squares
+70.0
+
+Paramters: 
+True Positive: 2
+False Positive: 0
+True Negative: 5
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)100.0% 
+
+Precision (TP/TP+FP): 100.0% 
+
+Path 42: Remove, lMhB, butter, None, KNN
+KNN
+BUTTER
+KNN training done!
+trial 0: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 1: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 2: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 3: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 4: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 5: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 6: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 7: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 8: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 9: PCA Unknown, None [u'RIGHT'], LDA Unknown
+[False, False, False, False, False, True, False, True, True, False]
+30.0 70.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 001
+Enhancement flags 100
+Classifier KNN
+30.0
+
+Paramters: 
+True Positive: 1
+False Positive: 3
+True Negative: 2
+False Negative: 4
+Sensitivity (TP/TP+TF): 20.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 25.0% 
+
+Path 43: Remove, lMhB, butter, None, likelihood
+Likelihood
+BUTTER
+Likelihood training done!
+trial 0: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 1: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 2: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 3: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 4: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 5: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 6: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 7: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 8: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 9: PCA Unknown, LDA Unknown, None [u'RIGHT']
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[True, False, False, True, False, True, True, True, False, False]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 001
+Enhancement flags 100
+Classifier Likelihood
+50.0
+
+Paramters: 
+True Positive: 1
+False Positive: 1
+True Negative: 4
+False Negative: 4
+Sensitivity (TP/TP+TF): 20.0% 
+
+Specifity: (TN/TN+FP)80.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 44: Remove, lMhB, butter, None, leastSquares
+Least Squares
+BUTTER
+Least Square training done!
+trial 0: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 1: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 2: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 3: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 4: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 5: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 6: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 7: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 8: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 9: PCA Unknown, LDA Unknown, None [u'LEFT']
+[True, True, True, True, True, True, False, True, False, True]
+80.0 20.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 001
+Enhancement flags 100
+Classifier Least Squares
+80.0
+
+Paramters: 
+True Positive: 3
+False Positive: 0
+True Negative: 5
+False Negative: 2
+Sensitivity (TP/TP+TF): 60.0% 
+
+Specifity: (TN/TN+FP)100.0% 
+
+Precision (TP/TP+FP): 100.0% 
+
+Path 45: Remove, mean, butter, LDA, KNN
+KNN
+BUTTER
+KNN training done!
+trial 0: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 1: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 2: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 3: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 4: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 5: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 6: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 7: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 8: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 9: PCA Unknown, None Unknown, LDA [u'LEFT']
+[True, False, False, True, False, True, False, False, False, True]
+40.0 60.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 001
+Enhancement flags 001
+Classifier KNN
+40.0
+
+Paramters: 
+True Positive: 0
+False Positive: 1
+True Negative: 4
+False Negative: 5
+Sensitivity (TP/TP+TF): 0.0% 
+
+Specifity: (TN/TN+FP)80.0% 
+
+Precision (TP/TP+FP): 0.0% 
+
+Path 46: Remove, mean, butter, LDA, likelihood
+Likelihood
+BUTTER
+x = before filter
+Likelihood training done!
+trial 0: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 1: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 2: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 3: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 4: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 5: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 6: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 7: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 8: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 9: PCA Unknown, LDA [u'LEFT'], None Unknown
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[True, False, False, True, False, True, True, False, True, True]
+60.0 40.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 001
+Enhancement flags 001
+Classifier Likelihood
+60.0
+
+Paramters: 
+True Positive: 2
+False Positive: 1
+True Negative: 4
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)80.0% 
+
+Precision (TP/TP+FP): 66.6666666667% 
+
+Path 47: Remove, mean, butter, LDA, leastSquares
+Least Squares
+BUTTER
+Least Square training done!
+trial 0: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 1: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 2: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 3: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 4: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 5: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 6: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 7: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 8: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 9: PCA Unknown, LDA [u'LEFT'], None Unknown
+[True, False, False, True, False, True, True, False, True, True]
+60.0 40.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 001
+Enhancement flags 001
+Classifier Least Squares
+60.0
+
+Paramters: 
+True Positive: 2
+False Positive: 1
+True Negative: 4
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)80.0% 
+
+Precision (TP/TP+FP): 66.6666666667% 
+
+Path 48: Remove, mean, butter, PCA, KNN
+KNN
+BUTTER
+nChannels =  28
+KNN training done!
+trial 0: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 1: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 2: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 3: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 4: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 5: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 6: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 7: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 8: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 9: PCA [u'LEFT'], None Unknown, LDA Unknown
+[True, True, False, True, False, True, False, True, False, True]
+60.0 40.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 001
+Enhancement flags 010
+Classifier KNN
+60.0
+
+Paramters: 
+True Positive: 1
+False Positive: 0
+True Negative: 5
+False Negative: 4
+Sensitivity (TP/TP+TF): 20.0% 
+
+Specifity: (TN/TN+FP)100.0% 
+
+Precision (TP/TP+FP): 100.0% 
+
+Path 49: Remove, mean, butter, PCA, likelihood
+Likelihood
+BUTTER
+x = before filter
+nChannels =  28
+Likelihood training done!
+trial 0: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 1: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 2: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 3: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 4: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 5: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 6: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 7: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 8: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 9: PCA [u'LEFT'], LDA Unknown, None Unknown
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[True, False, False, True, False, True, True, False, True, True]
+60.0 40.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 001
+Enhancement flags 010
+Classifier Likelihood
+60.0
+
+Paramters: 
+True Positive: 2
+False Positive: 1
+True Negative: 4
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)80.0% 
+
+Precision (TP/TP+FP): 66.6666666667% 
+
+Path 50: Remove, mean, butter, PCA, leastSquares
+Least Squares
+BUTTER
+nChannels =  28
+Least Square training done!
+trial 0: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 1: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 2: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 3: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 4: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 5: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 6: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 7: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 8: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 9: PCA [u'LEFT'], LDA Unknown, None Unknown
+[True, False, False, True, False, True, True, False, True, True]
+60.0 40.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 001
+Enhancement flags 010
+Classifier Least Squares
+60.0
+
+Paramters: 
+True Positive: 2
+False Positive: 1
+True Negative: 4
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)80.0% 
+
+Precision (TP/TP+FP): 66.6666666667% 
+
+Path 51: Remove, mean, butter, None, KNN
+KNN
+BUTTER
+KNN training done!
+trial 0: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 1: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 2: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 3: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 4: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 5: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 6: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 7: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 8: PCA Unknown, None [u'LEFT'], LDA Unknown
+trial 9: PCA Unknown, None [u'LEFT'], LDA Unknown
+[False, True, False, True, True, True, False, True, False, True]
+60.0 40.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 001
+Enhancement flags 100
+Classifier KNN
+60.0
+
+Paramters: 
+True Positive: 2
+False Positive: 1
+True Negative: 4
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)80.0% 
+
+Precision (TP/TP+FP): 66.6666666667% 
+
+Path 52: Remove, mean, butter, None, likelihood
+Likelihood
+BUTTER
+x = before filter
+Likelihood training done!
+trial 0: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 1: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 2: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 3: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 4: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 5: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 6: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 7: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 8: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 9: PCA Unknown, LDA Unknown, None [u'LEFT']
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[True, False, False, True, False, True, False, False, True, True]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 001
+Enhancement flags 100
+Classifier Likelihood
+50.0
+
+Paramters: 
+True Positive: 1
+False Positive: 1
+True Negative: 4
+False Negative: 4
+Sensitivity (TP/TP+TF): 20.0% 
+
+Specifity: (TN/TN+FP)80.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 53: Remove, mean, butter, None, leastSquares
+Least Squares
+BUTTER
+Least Square training done!
+trial 0: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 1: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 2: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 3: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 4: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 5: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 6: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 7: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 8: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 9: PCA Unknown, LDA Unknown, None [u'LEFT']
+[True, False, False, True, False, True, True, False, True, True]
+60.0 40.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 001
+Enhancement flags 100
+Classifier Least Squares
+60.0
+
+Paramters: 
+True Positive: 2
+False Positive: 1
+True Negative: 4
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)80.0% 
+
+Precision (TP/TP+FP): 66.6666666667% 
+
+Path 54: Remove, lMhB, ideal, LDA, KNN
+KNN
+Ideal
+warning: matrix singular to machine precision
+KNN training done!
+trial 0: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 1: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 2: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 3: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 4: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 5: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 6: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 7: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 8: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 9: PCA Unknown, None Unknown, LDA [u'RIGHT']
+[False, True, True, False, True, True, False, False, True, False]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 010
+Enhancement flags 001
+Classifier KNN
+50.0
+
+Paramters: 
+True Positive: 4
+False Positive: 4
+True Negative: 1
+False Negative: 1
+Sensitivity (TP/TP+TF): 80.0% 
+
+Specifity: (TN/TN+FP)20.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 55: Remove, lMhB, ideal, LDA, likelihood
+Likelihood
+Ideal
+Likelihood training done!
+trial 0: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 1: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 2: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 3: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 4: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 5: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 6: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 7: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 8: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 9: PCA Unknown, LDA [u'RIGHT'], None Unknown
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[False, True, True, False, False, True, False, False, False, False]
+30.0 70.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 010
+Enhancement flags 001
+Classifier Likelihood
+30.0
+
+Paramters: 
+True Positive: 2
+False Positive: 4
+True Negative: 1
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)20.0% 
+
+Precision (TP/TP+FP): 33.3333333333% 
+
+Path 56: Remove, lMhB, ideal, LDA, leastSquares
+Least Squares
+Ideal
+Least Square training done!
+trial 0: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 1: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 2: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 3: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 4: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 5: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 6: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 7: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 8: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 9: PCA Unknown, LDA [u'RIGHT'], None Unknown
+[False, True, True, False, False, True, False, False, False, False]
+30.0 70.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 010
+Enhancement flags 001
+Classifier Least Squares
+30.0
+
+Paramters: 
+True Positive: 2
+False Positive: 4
+True Negative: 1
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)20.0% 
+
+Precision (TP/TP+FP): 33.3333333333% 
+
+Path 57: Remove, lMhB, ideal, PCA, KNN
+KNN
+Ideal
+nChannels =  28
+KNN training done!
+trial 0: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 1: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 2: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 3: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 4: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 5: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 6: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 7: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 8: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 9: PCA [u'LEFT'], None Unknown, LDA Unknown
+[False, True, False, True, True, True, False, True, True, True]
+70.0 30.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 010
+Enhancement flags 010
+Classifier KNN
+70.0
+
+Paramters: 
+True Positive: 3
+False Positive: 1
+True Negative: 4
+False Negative: 2
+Sensitivity (TP/TP+TF): 60.0% 
+
+Specifity: (TN/TN+FP)80.0% 
+
+Precision (TP/TP+FP): 75.0% 
+
+Path 58: Remove, lMhB, ideal, PCA, likelihood
+Likelihood
+Ideal
+nChannels =  28
+Likelihood training done!
+trial 0: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 1: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 2: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 3: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 4: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 5: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 6: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 7: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 8: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 9: PCA [u'RIGHT'], LDA Unknown, None Unknown
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[False, False, True, False, True, False, False, False, True, False]
+30.0 70.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 010
+Enhancement flags 010
+Classifier Likelihood
+30.0
+
+Paramters: 
+True Positive: 3
+False Positive: 5
+True Negative: 0
+False Negative: 2
+Sensitivity (TP/TP+TF): 60.0% 
+
+Specifity: (TN/TN+FP)0.0% 
+
+Precision (TP/TP+FP): 37.5% 
+
+Path 59: Remove, lMhB, ideal, PCA, leastSquares
+Least Squares
+Ideal
+nChannels =  28
+Least Square training done!
+trial 0: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 1: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 2: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 3: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 4: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 5: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 6: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 7: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 8: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 9: PCA [u'RIGHT'], LDA Unknown, None Unknown
+[False, True, True, False, False, True, False, False, False, False]
+30.0 70.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 010
+Enhancement flags 010
+Classifier Least Squares
+30.0
+
+Paramters: 
+True Positive: 2
+False Positive: 4
+True Negative: 1
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)20.0% 
+
+Precision (TP/TP+FP): 33.3333333333% 
+
+Path 60: Remove, lMhB, ideal, None, KNN
+KNN
+Ideal
+KNN training done!
+trial 0: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 1: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 2: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 3: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 4: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 5: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 6: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 7: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 8: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 9: PCA Unknown, None [u'RIGHT'], LDA Unknown
+[False, True, True, False, True, False, True, False, True, False]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 010
+Enhancement flags 100
+Classifier KNN
+50.0
+
+Paramters: 
+True Positive: 5
+False Positive: 5
+True Negative: 0
+False Negative: 0
+Sensitivity (TP/TP+TF): 100.0% 
+
+Specifity: (TN/TN+FP)0.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 61: Remove, lMhB, ideal, None, likelihood
+Likelihood
+Ideal
+Likelihood training done!
+trial 0: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 1: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 2: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 3: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 4: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 5: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 6: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 7: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 8: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 9: PCA Unknown, LDA Unknown, None [u'RIGHT']
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[False, True, True, False, True, False, True, False, True, False]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 010
+Enhancement flags 100
+Classifier Likelihood
+50.0
+
+Paramters: 
+True Positive: 5
+False Positive: 5
+True Negative: 0
+False Negative: 0
+Sensitivity (TP/TP+TF): 100.0% 
+
+Specifity: (TN/TN+FP)0.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 62: Remove, lMhB, ideal, None, leastSquares
+Least Squares
+Ideal
+Least Square training done!
+trial 0: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 1: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 2: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 3: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 4: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 5: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 6: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 7: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 8: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 9: PCA Unknown, LDA Unknown, None [u'RIGHT']
+[False, True, True, False, True, False, True, False, True, False]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 01000
+Preprocessing Flags = 010
+Enhancement flags 100
+Classifier Least Squares
+50.0
+
+Paramters: 
+True Positive: 5
+False Positive: 5
+True Negative: 0
+False Negative: 0
+Sensitivity (TP/TP+TF): 100.0% 
+
+Specifity: (TN/TN+FP)0.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 63: Remove, mean, ideal, LDA, KNN
+KNN
+Ideal
+KNN training done!
+trial 0: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 1: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 2: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 3: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 4: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 5: PCA Unknown, None Unknown, LDA [u'LEFT']
+trial 6: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 7: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 8: PCA Unknown, None Unknown, LDA [u'RIGHT']
+trial 9: PCA Unknown, None Unknown, LDA [u'LEFT']
+[False, False, False, False, False, True, True, False, True, True]
+40.0 60.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 010
+Enhancement flags 001
+Classifier KNN
+40.0
+
+Paramters: 
+True Positive: 2
+False Positive: 3
+True Negative: 2
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 40.0% 
+
+Path 64: Remove, mean, ideal, LDA, likelihood
+Likelihood
+Ideal
+Likelihood training done!
+trial 0: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 1: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 2: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 3: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 4: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 5: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 6: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 7: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 8: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 9: PCA Unknown, LDA [u'LEFT'], None Unknown
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[False, False, False, False, False, True, True, False, True, True]
+40.0 60.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 010
+Enhancement flags 001
+Classifier Likelihood
+40.0
+
+Paramters: 
+True Positive: 2
+False Positive: 3
+True Negative: 2
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 40.0% 
+
+Path 65: Remove, mean, ideal, LDA, leastSquares
+Least Squares
+Ideal
+Least Square training done!
+trial 0: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 1: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 2: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 3: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 4: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 5: PCA Unknown, LDA [u'LEFT'], None Unknown
+trial 6: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 7: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 8: PCA Unknown, LDA [u'RIGHT'], None Unknown
+trial 9: PCA Unknown, LDA [u'LEFT'], None Unknown
+[False, False, False, False, False, True, True, False, True, True]
+40.0 60.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 010
+Enhancement flags 001
+Classifier Least Squares
+40.0
+
+Paramters: 
+True Positive: 2
+False Positive: 3
+True Negative: 2
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 40.0% 
+
+Path 66: Remove, mean, ideal, PCA, KNN
+KNN
+Ideal
+nChannels =  28
+KNN training done!
+trial 0: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 1: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 2: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 3: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 4: PCA [u'LEFT'], None Unknown, LDA Unknown
+trial 5: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 6: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 7: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 8: PCA [u'RIGHT'], None Unknown, LDA Unknown
+trial 9: PCA [u'LEFT'], None Unknown, LDA Unknown
+[True, False, False, False, False, False, True, False, True, True]
+40.0 60.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 010
+Enhancement flags 010
+Classifier KNN
+40.0
+
+Paramters: 
+True Positive: 2
+False Positive: 3
+True Negative: 2
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 40.0% 
+
+Path 67: Remove, mean, ideal, PCA, likelihood
+Likelihood
+Ideal
+nChannels =  28
+Likelihood training done!
+trial 0: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 1: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 2: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 3: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 4: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 5: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 6: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 7: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 8: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 9: PCA [u'LEFT'], LDA Unknown, None Unknown
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[False, False, False, False, False, True, True, False, True, True]
+40.0 60.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 010
+Enhancement flags 010
+Classifier Likelihood
+40.0
+
+Paramters: 
+True Positive: 2
+False Positive: 3
+True Negative: 2
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 40.0% 
+
+Path 68: Remove, mean, ideal, PCA, leastSquares
+Least Squares
+Ideal
+nChannels =  28
+Least Square training done!
+trial 0: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 1: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 2: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 3: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 4: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 5: PCA [u'LEFT'], LDA Unknown, None Unknown
+trial 6: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 7: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 8: PCA [u'RIGHT'], LDA Unknown, None Unknown
+trial 9: PCA [u'LEFT'], LDA Unknown, None Unknown
+[False, False, False, False, False, True, True, False, True, True]
+40.0 60.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 010
+Enhancement flags 010
+Classifier Least Squares
+40.0
+
+Paramters: 
+True Positive: 2
+False Positive: 3
+True Negative: 2
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 40.0% 
+
+Path 69: Remove, mean, ideal, None, KNN
+KNN
+Ideal
+KNN training done!
+trial 0: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 1: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 2: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 3: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 4: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 5: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 6: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 7: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 8: PCA Unknown, None [u'RIGHT'], LDA Unknown
+trial 9: PCA Unknown, None [u'LEFT'], LDA Unknown
+[False, True, True, False, True, False, True, False, True, True]
+60.0 40.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 010
+Enhancement flags 100
+Classifier KNN
+60.0
+
+Paramters: 
+True Positive: 5
+False Positive: 4
+True Negative: 1
+False Negative: 0
+Sensitivity (TP/TP+TF): 100.0% 
+
+Specifity: (TN/TN+FP)20.0% 
+
+Precision (TP/TP+FP): 55.5555555556% 
+
+Path 70: Remove, mean, ideal, None, likelihood
+Likelihood
+Ideal
+Likelihood training done!
+trial 0: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 1: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 2: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 3: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 4: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 5: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 6: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 7: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 8: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 9: PCA Unknown, LDA Unknown, None [u'LEFT']
+[[2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]
+ [1]
+ [2]]
+[False, True, True, False, False, True, True, False, False, True]
+50.0 50.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 010
+Enhancement flags 100
+Classifier Likelihood
+50.0
+
+Paramters: 
+True Positive: 3
+False Positive: 3
+True Negative: 2
+False Negative: 2
+Sensitivity (TP/TP+TF): 60.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 50.0% 
+
+Path 71: Remove, mean, ideal, None, leastSquares
+Least Squares
+Ideal
+Least Square training done!
+trial 0: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 1: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 2: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 3: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 4: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 5: PCA Unknown, LDA Unknown, None [u'LEFT']
+trial 6: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 7: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 8: PCA Unknown, LDA Unknown, None [u'RIGHT']
+trial 9: PCA Unknown, LDA Unknown, None [u'LEFT']
+[False, False, False, False, False, True, True, False, True, True]
+40.0 60.0
+Train = [T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+Noise Removal = True
+Same FileFalse
+Detect[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Extraction Flags = 10000
+Preprocessing Flags = 010
+Enhancement flags 100
+Classifier Least Squares
+40.0
+
+Paramters: 
+True Positive: 2
+False Positive: 3
+True Negative: 2
+False Negative: 3
+Sensitivity (TP/TP+TF): 40.0% 
+
+Specifity: (TN/TN+FP)40.0% 
+
+Precision (TP/TP+FP): 40.0% 
+
+-----------------------
+Finished bulk detection
+^Croot@kali:~/Documents/Braingizer/bAnalyzer#  C

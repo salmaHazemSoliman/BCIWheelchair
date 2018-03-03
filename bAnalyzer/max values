@@ -1,0 +1,31 @@
+
+[T][2014-01-15 15-02-52] Mohamed Nour El-Din.csv
+[D][2014-03-01 16-48-36] Mohamed Nour El-Din.csv
+Remove, mean, ideal, None, KNN 60
+Remove, lMhB, ideal, PCA, KNN 70
+Remove, mean, butter, None, leastSquares 60
+Remove, mean, butter, None, KNN 60
+Remove, mean, butter, PCA, leastSquares 60
+Remove, mean, butter, PCA, likelihood 60
+Remove, mean, butter, PCA, KNN 60
+Remove, mean, butter, LDA, leastSquares 60
+Remove, mean, butter, LDA, likelihood 60
+Remove, lMhB, butter, None, leastSquares 80
+Remove, lMhB, butter, PCA, leastSquares 70
+Remove, lMhB, butter, PCA, likelihood 70
+Remove, lMhB, butter, PCA, KNN 60
+Remove, lMhB, butter, LDA, leastSquares 70
+Remove, lMhB, butter, LDA, likelihood 70
+Remove, lMhB, butter, LDA, KNN 70
+Raw, mean, ideal, None, leastSquares 70
+Raw, mean, ideal, None, leastSquares 60
+Raw, mean, ideal, PCA, leastSquares 60
+Raw, mean, ideal, PCA, likelihood 60
+Raw, mean, ideal, LDA, likelihood 70
+Raw, mean, ideal, LDA, KNN 60
+Raw, lMhB, ideal, LDA, KNN 80
+Raw, mean, butter, None, KNN 60
+Raw, mean, butter, PCA, KNN 80
+Raw, lMhB, butter, None, likelihood 70
+Raw, lMhB, butter, PCA, KNN 80
+Raw, lMhB, butter, LDA, KNN 60
